@@ -6,7 +6,7 @@ from API_Referencing import api_call_VT
 api_key="e2cb60f75bd9d250cc2080ab2937eb5c0e5e8ab9e9d02de8a1679c698230007f"
 
 def open_file():
-    filepath = filedialog.askopenfile(
+    filepath = filedialog.askopenfilename(
         title="Select a file",
         filetypes=(("All files", "*.*"),)
     )
