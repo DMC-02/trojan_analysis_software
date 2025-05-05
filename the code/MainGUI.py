@@ -12,7 +12,7 @@ def open_file():
     )
     if filepath:
         md5 = MD5_Collect(filepath)
-        results= api_call_VT(md5)
+        results= api_call_VT(md5, api_key)
 
         display_result(results)
 
@@ -23,7 +23,7 @@ def display_result(info):
         result_text.inser(END, f"Error: {info['Error']}")
     else:
         for key, value in info.item():
-            result_text.inser(END, f"{key}: {value}\n")
+            result_text.insert(END, f"{key}: {value}\n")
 
 
 # the GUI
