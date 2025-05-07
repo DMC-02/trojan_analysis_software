@@ -24,14 +24,14 @@ def display_result(info):
     else:
         if info.get("Is it a trojan?") == "Yes":
             result_text.insert(END, "Trojan was found, uh oh")
-        for key, value in info.item():
+        for key, value in info.items():
             result_text.insert(END, f"{key}: {value}\n")
 
 
 # the GUI
 root = Tk()
 root.title("Malware analysis program")
-root.geomertry("500x700")
+root.geometry("500x700")
 
 frame = Frame(root)
 frame.pack(pady=10)
