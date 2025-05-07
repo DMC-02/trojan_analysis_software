@@ -22,6 +22,8 @@ def display_result(info):
     if "Error" in info:
         result_text.inser(END, f"Error: {info['Error']}")
     else:
+        if info.get("Is it a trojan?") == "Yes":
+            result_text.insert(END, "Trojan was found, uh oh")
         for key, value in info.item():
             result_text.insert(END, f"{key}: {value}\n")
 
