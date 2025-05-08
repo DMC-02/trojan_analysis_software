@@ -20,7 +20,7 @@ def display_result(info):
     result_text.delete("1.0", END)
 
     if "Error" in info:
-        result_text.inser(END, f"Error: {info['Error']}")
+        result_text.insert(END, f"Error: {info['Error']}")
     else:
         if info.get("Is it a trojan?") == "Yes":
             result_text.insert(END, "Trojan was found, uh oh")
