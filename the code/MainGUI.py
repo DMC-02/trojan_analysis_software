@@ -3,7 +3,7 @@ from tkinter import filedialog
 from File_Scan import MD5_Collect
 from API_Referencing import api_call_VT
 
-api_key="e2cb60f75bd9d250cc2080ab2937eb5c0e5e8ab9e9d02de8a1679c698230007f"
+api_key="insert virustotal API key here"
 
 def open_file():
     filepath = filedialog.askopenfilename(
